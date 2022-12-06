@@ -21,15 +21,30 @@
         </div>
     </nav>
 
-    <div class="container mx-auto max-w-4xl text-white mt-32">
+    <div class="container mx-auto max-w-4xl text-white md:mt-32 mt-24">
 
         <div class="flex items-center gap-2 w-full justify-center">
-            <img src="./ressources/favicon.png" class="h-6" alt="AppyCare Logo">
-            <p class="dark:text-white text-black text-left font-semibold text-lg">AppyCare</p>
+            <img src="./ressources/favicon.png" class="h-5 sm:h-6" alt="AppyCare Logo">
+            <p class="dark:text-white text-black text-left font-semibold sm:text-lg text-base">AppyCare</p>
         </div>
-        <p class="text-3xl font-bold text-center mt-3 mb-64 dark:text-white text-black">BDPM API Documentation</p>
+        <p class="md:text-3xl text-2xl font-bold text-center mt-3 dark:text-white text-black px-4">BDPM API Documentation</p>
+        <div class="w-full flex justify-center text-center mt-4">
+            <code class="code-block text-xs">Current API version: v0</code>
+        </div>
 
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-row gap-5 sm:text-lg text-base sm:mt-16 mt-10 items-start sm:justify-start justify-center">
+            <a class="flex flex-col gap-1" href="#">
+                <p class="font-semibold text-black dark:text-white">Information</p>
+                <div id="line" class="h-0.5 bg-black dark:bg-white rounded-full"></div>
+            </a>
+            <a class="flex flex-col gap-1" href="#">
+                <p class="font-semibold text-black dark:text-white">Usage</p>
+                <div id="line2" class="h-0.5 bg-transparent"></div>
+            </a>
+        </div>
+
+
+        <div class="flex flex-col gap-10 mt-6">
             <div class="flex flex-col gap-3 text-justify">
                 <div class="flex flex-row items-center gap-3">
                     <img src="./ressources/info-circle.svg" alt="" class="block w-5 h-5">
@@ -90,7 +105,7 @@
                     No individual authentication is required to access this API, and resources are fully open and available using this global API key:
                 </p>
                 <div class="flex flex-col justify-center items-center">
-                    <code class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-center">
+                    <code class="code-block text-center">
                         8c7d3f5f-c9b1-419a-b93f-cafe2f7c41c4
                     </code>
                 </div>
@@ -98,7 +113,7 @@
                     To be granted access to the API ressources, the API key needs to be passed using a HTTP header. 
                 </p>
                 <p class="">
-                    Use the <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-yellow-500">AC-API-KEY</span> header name to pass the global key; note that any request made that do not include a valid
+                    Use the <code class="code-block text-yellow-500">AC-API-KEY</code> header name to pass the global key; note that any request made that do not include a valid
                     key will return a 401 Unauthorized error. No usage rate applies, but we still encourage you to limit the 
                     frequency of requests to limit our hosting costs and more importently limit data transfers
                     to the stricly required ones.
