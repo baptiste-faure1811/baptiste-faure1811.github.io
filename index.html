@@ -4,8 +4,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.css">
 </head>
-<body>
-    <p>Hello, World!</p>
+<body class="bg-gray-800 pb-64">
+    <div class="container mx-auto max-w-4xl text-white">
+
+        <div class="flex flex-col justify-center ">
+            <p class="text-5xl font-bold text-center">AppyCare</p>
+            <p class="text-xl text-center mt-4">Developers</p>
+        </div>
+    
+    
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-3 text-justify">
+                <div class="flex flex-row items-center gap-3">
+                    <img src="./ressources/info-circle.svg" alt="" class="block w-5 h-5">
+                    <p class="font-semibold text-xl">General information</p>
+                </div>
+                <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3 text-justify">
+                <div class="flex flex-row items-center gap-3">
+                    <img src="./ressources/lock-shield.svg" alt="" class="block w-5 h-5">
+                    <p class="font-semibold text-xl">Privacy</p>
+                </div>
+                <p class="">
+                    At AppyCare, we strongly believe that privacy is a core principle that should be considered a human right. With that in mind,
+                    we take your privacy (and your users'), extremely seriously. We are committed to being transparent about what information we collect
+                    and the resons why we might collect any specific data.
+                </p>
+                <p class="">
+                    Our BDPM API does not collect any usage data from you or your users. We do not track how you use this API or
+                    what you do with the information you receive through it. We value your trust and are committed to offer you an
+                    easy access to medication data without making any compromises about your privacy. 
+                </p>
+                <p class="">
+                    If you have any questions or concerns about your privacy, or any related questions, please do not hesitate
+                    to contact us at privacy@appycare.fr.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3 text-justify">
+                <div class="flex flex-row items-center gap-3">
+                    <img src="./ressources/list-dash-header-rectangle.svg" alt="" class="block w-5 h-5">
+                    <p class="font-semibold text-xl">Headers</p>
+                </div>
+                <p class="">
+                    A few HTTP headers are included in every response messages that are sent between you and our servers.
+                    These headers provide additional information about the request or response, such as the content type,
+                    the date and time, and general information about the API.
+                </p>
+                <p class="">
+                    These HTTP headers can be used to retrieve informations such as how to contact our support team or
+                    get the official data source link. 
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3 text-justify">
+                <div class="flex flex-row items-center gap-3">
+                    <img src="./ressources/key-radiowaves-forward-fill.svg" alt="" class="block w-5 h-5">
+                    <p class="font-semibold text-xl">Global API key</p>
+                </div>
+                <p class="">
+                    This is a consumption-only API, only the HTTP <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-green-500">GET</span> method is available no matter the ressource or endpoint used.
+                    No individual authentication is required to access this API, and resources are fully open and available using this global API key:
+                </p>
+                <div class="flex flex-col justify-center items-center">
+                    <code class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-center">
+                        8c7d3f5f-c9b1-419a-b93f-cafe2f7c41c4
+                    </code>
+                </div>
+                <p class="">
+                    To be granted access to the API ressources, the API key needs to be passed using a HTTP header. 
+                </p>
+                <p class="">
+                    Use the <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-yellow-500">AC-API-KEY</span> header name to pass the global key; note that any request made that do not include a valid
+                    key will return a 401 Unauthorized error. No usage rate applies, but we still encourage you to limit the 
+                    frequency of requests to limit our hosting costs and more importently limit data transfers
+                    to the stricly required ones.
+                </p>
+                <p class="">
+                    Example using ExpressJS :<br>
+                    <code class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm">req.set("AC-API-KEY", "lsdqkjfnlkjndlfqkjbkjb");</code>
+                </p>
+                <div class="flex flex-row items-center gap-4 bg-orange-500 bg-opacity-10 px-4 py-2 rounded-md border border-orange-300 border-opacity-40 text-sm text-left font-medium text-orange-400">
+                    <img src="./ressources/exclamationmark-triangle.svg" alt="" class="w-5 h-5 block">
+                    <p class="">
+                        Please be aware that the value of this global key might change in the future and would require you to
+                        update your requests to use the updated value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

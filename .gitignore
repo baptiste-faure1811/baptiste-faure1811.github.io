@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.DS_Store
+css/
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
