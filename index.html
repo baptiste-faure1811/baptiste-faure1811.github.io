@@ -9,11 +9,11 @@
 </head>
 <body class="bg-white dark:bg-gray-800 pb-64">
 
-    <nav class="fixed w-full top-0 left-0 md:px-6 px-4 bg-slate-300 dark:bg-gray-900 sm:py-4 py-3 border-b border-slate-200 dark:border-gray-600">
+    <nav class="fixed w-full top-0 left-0 md:px-6 px-4 bg-teal-500 bg-opacity-20 dark:bg-gray-900 sm:py-4 py-3 border-b-2 border-teal-500 border-opacity-20 dark:border-gray-600">
         <div class="container mx-auto max-w-5xl flex flex-row sm:justify-between justify-center items-center">
             <div class="flex items-center gap-3">
                 <img src="./ressources/favicon.png" class="h-8 sm:block hidden" alt="AppyCare Logo">
-                <p class="sm:text-2xl text-xl text-black font-light dark:text-white sm:text-left text-center">
+                <p class="sm:text-2xl text-xl font-light dark:text-white sm:text-left text-center">
                     <span class="font-bold">AppyCare</span> Developers
                 </p>
             </div>
@@ -21,34 +21,49 @@
         </div>
     </nav>
 
-    <div class="container mx-auto max-w-4xl text-white md:mt-32 mt-24">
+    <div class="container mx-auto max-w-4xl md:mt-32 mt-24 px-4">
 
         <div class="flex items-center gap-2 w-full justify-center">
             <img src="./ressources/favicon.png" class="h-5 sm:h-6" alt="AppyCare Logo">
-            <p class="dark:text-white text-black text-left font-semibold sm:text-lg text-base">AppyCare</p>
+            <p class="dark:text-white text-left font-semibold sm:text-lg text-base">AppyCare</p>
         </div>
-        <p class="md:text-3xl text-2xl font-bold text-center mt-3 dark:text-white text-black px-4">BDPM API Documentation</p>
+        <p class="md:text-3xl text-2xl font-bold text-center mt-3 dark:text-white px-4">BDPM API Documentation</p>
         <div class="w-full flex justify-center text-center mt-4">
             <code class="code-block text-xs">Current API version: v0</code>
         </div>
 
         <div class="flex flex-row gap-5 sm:text-lg text-base sm:mt-16 mt-10 items-start sm:justify-start justify-center">
             <a class="flex flex-col gap-1" href="#">
-                <p class="font-semibold text-black dark:text-white">Information</p>
+                <p class="font-semibold dark:text-white">Information</p>
                 <div id="line" class="h-0.5 bg-black dark:bg-white rounded-full"></div>
             </a>
             <a class="flex flex-col gap-1" href="#">
-                <p class="font-semibold text-black dark:text-white">Usage</p>
+                <p class="font-semibold dark:text-white">Usage</p>
                 <div id="line2" class="h-0.5 bg-transparent"></div>
             </a>
         </div>
 
+        <div class="border-2 border-opacity-30 dark:border-opacity-20 dark:border-white border-teal-500 rounded-xl my-10">
+            <div class="border-b-2 dark:border-b-white border-b-teal-500 border-opacity-20 dark:border-opacity-20 dark:bg-gray-900 dark:bg-opacity-80 bg-teal-500 bg-opacity-10 rounded-t-xl sm:px-4 px-2 py-2 flex flex-row items-center sm:justify-start justify-center gap-3">
+                <img src="./ressources/info-circle.svg" alt="" class="sm:block hidden w-5 h-5">
+                <p class="font-medium sm:text-lg text-base dark:text-white">General information</p>
+            </div>
+            <div class="px-4 sm:py-3 py-2">
+                <p class="dark:text-white sm:text-left text-center sm:text-base text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+        </div>
+
 
         <div class="flex flex-col gap-10 mt-6">
-            <div class="flex flex-col gap-3 text-justify">
+            <div class="flex flex-col gap-3 text-left">
                 <div class="flex flex-row items-center gap-3">
                     <img src="./ressources/info-circle.svg" alt="" class="block w-5 h-5">
-                    <p class="font-semibold text-xl">General information</p>
+                    <p class="font-medium text-xl">General information</p>
                 </div>
                 <p class="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
