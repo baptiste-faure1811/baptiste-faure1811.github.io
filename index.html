@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="icon" type="image/x-icon" href="./ressources/favicon.png">
 </head>
-<body class="bg-white dark:bg-gray-800 pb-64">
+<body class="bg-white dark:bg-dark-background pb-64">
 
-    <nav class="fixed w-full top-0 left-0 md:px-6 px-4 bg-teal-500 bg-opacity-20 dark:bg-gray-900 sm:py-4 py-3 border-b-2 border-teal-500 border-opacity-20 dark:border-gray-600">
-        <div class="container mx-auto max-w-5xl flex flex-row sm:justify-between justify-center items-center">
-            <div class="flex items-center gap-3">
-                <img src="./ressources/favicon.png" class="h-8 sm:block hidden" alt="AppyCare Logo">
-                <p class="sm:text-2xl text-xl font-light dark:text-white sm:text-left text-center">
-                    <span class="font-bold">AppyCare</span> Developers
-                </p>
+    <nav class="fixed w-full top-0 left-0 bg-white dark:bg-transparent">
+       <div class="bg-teal-500 bg-opacity-20 dark:bg-dark-nav-background border-b-2 border-teal-500 border-opacity-20 dark:border-gray-200 dark:border-opacity-10 sm:py-4 py-3 md:px-6 px-4">
+            <div class="container mx-auto max-w-5xl flex flex-row sm:justify-between justify-center items-center">
+                <div class="flex items-center gap-3">
+                    <img src="./ressources/favicon.png" class="h-8 sm:block hidden" alt="AppyCare Logo">
+                    <p class="sm:text-2xl text-xl font-light dark:text-white sm:text-left text-center">
+                        <span class="font-bold">AppyCare</span> Developers
+                    </p>
+                </div>
+                <p class="font-medium text-gray-800 dark:text-gray-300 sm:block hidden">BDPM API v0</p>
             </div>
-            <p class="font-medium text-gray-600 dark:text-gray-300 sm:block hidden">BDPM API v0</p>
-        </div>
+       </div>
     </nav>
 
     <div class="container mx-auto max-w-4xl md:mt-32 mt-24 px-4">
@@ -29,13 +31,13 @@
         </div>
         <p class="md:text-3xl text-2xl font-bold text-center mt-3 dark:text-white px-4">BDPM API Documentation</p>
         <div class="w-full flex justify-center text-center mt-4">
-            <code class="code-block text-xs">Current API version: v0</code>
+            <code class="code-block text-xs text-sk-400">Current API version: v0</code>
         </div>
 
         <div class="flex flex-row gap-5 sm:text-lg text-base sm:mt-16 mt-10 items-start sm:justify-start justify-center">
             <a class="flex flex-col gap-1" href="#">
                 <p class="font-semibold dark:text-white">Information</p>
-                <div id="line" class="h-0.5 bg-black dark:bg-white rounded-full"></div>
+                <div id="line" class="h-0.5 bg-black dark:bg-teal-600 rounded-full"></div>
             </a>
             <a class="flex flex-col gap-1" href="#">
                 <p class="font-semibold dark:text-white">Usage</p>
@@ -43,13 +45,13 @@
             </a>
         </div>
 
-        <div class="border-2 border-opacity-30 dark:border-opacity-20 dark:border-white border-teal-500 rounded-xl my-10">
-            <div class="border-b-2 dark:border-b-white border-b-teal-500 border-opacity-20 dark:border-opacity-20 dark:bg-gray-900 dark:bg-opacity-80 bg-teal-500 bg-opacity-10 rounded-t-xl sm:px-4 px-2 py-2 flex flex-row items-center sm:justify-start justify-center gap-3">
-                <img src="./ressources/info-circle.svg" alt="" class="sm:block hidden w-5 h-5">
+        <div class="border-2 border-opacity-30 dark:border-teal-500 dark:border-opacity-50 border-teal-500 rounded-xl my-10">
+            <div class="border-b-2 dark:border-b-teal-500 border-b-teal-500 border-opacity-20 dark:border-opacity-30 dark:bg-teal-700 dark:bg-opacity-20 bg-teal-500 bg-opacity-10 rounded-t-xl px-4 py-2 flex flex-row items-center justify-start gap-3">
+                <svg viewBox="-.005 0 19.931 19.931" class="sm:block hidden w-5 h-5 dark:fill-white fill-black" xmlns="http://www.w3.org/2000/svg"><path opacity="0" d="M0 0h19.92v19.93H-.01Z"/><path d="M9.96 19.92c5.44 0 9.96-4.53 9.96-9.97 0-5.45-4.53-9.97-9.98-9.97C4.5-.02-.02 4.49-.02 9.94c0 5.43 4.52 9.96 9.96 9.96Zm0-1.67c-4.61 0-8.3-3.7-8.3-8.31s3.67-8.31 8.28-8.31c4.6 0 8.31 3.69 8.31 8.3 0 4.6-3.7 8.3-8.31 8.3Zm-1.71-2.84h3.97c.4 0 .71-.3.71-.7 0-.39-.32-.69-.72-.69h-1.22V9.04c0-.53-.27-.88-.77-.88H8.38c-.41 0-.72.3-.72.68 0 .4.31.69.71.69h1.04V14H8.19c-.41 0-.72.3-.72.68 0 .4.31.69.71.69Zm1.62-8.85c.71 0 1.26-.57 1.26-1.28 0-.72-.56-1.28-1.27-1.28s-1.27.56-1.27 1.27 .56 1.27 1.26 1.27Z"/></svg>
                 <p class="font-medium sm:text-lg text-base dark:text-white">General information</p>
             </div>
-            <div class="px-4 sm:py-3 py-2">
-                <p class="dark:text-white sm:text-left text-center sm:text-base text-sm">
+            <div class="px-4 sm:py-3 py-2 bg-transparent dark:bg-teal-100 dark:bg-opacity-5 rounded-b-xl">
+                <p class="dark:text-white sm:text-base text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
