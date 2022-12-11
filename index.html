@@ -6,16 +6,19 @@
     <title>AppyCare Developer</title>
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="icon" type="image/x-icon" href="./ressources/favicon.png">
+    <meta name="theme-color" content="#D8F1ED" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161B22" media="(prefers-color-scheme: dark)">
 </head>
-<body class="bg-white dark:bg-dark-background pb-64">
+<body class="bg-white dark:bg-dark-background pb-64 dark:text-white">
 
+    <!-- Navigation Bar -->
     <nav class="fixed w-full top-0 left-0 bg-white dark:bg-transparent">
-       <div class="bg-teal-500 bg-opacity-20 dark:bg-dark-nav-background border-b-2 border-teal-500 border-opacity-20 dark:border-gray-200 dark:border-opacity-10 sm:py-4 py-3 md:px-6 px-4">
+       <div class="bg-teal-500 bg-opacity-20 dark:bg-dark-nav-background border-b border-teal-500 border-opacity-20 dark:border-gray-200 dark:border-opacity-10 sm:py-4 py-3 md:px-6 px-4">
             <div class="container mx-auto max-w-5xl flex flex-row sm:justify-between justify-center items-center">
                 <div class="flex items-center gap-3">
                     <img src="./ressources/favicon.png" class="h-8 sm:block hidden" alt="AppyCare Logo">
-                    <p class="sm:text-2xl text-xl font-light dark:text-white sm:text-left text-center">
-                        <span class="font-bold">AppyCare</span> Developers
+                    <p class="sm:text-2xl text-xl font-light  sm:text-left text-center">
+                        <span class="font-bold">AppyCare</span> <span class="text-black dark:text-white dark:text-opacity-70 font-light">Developers</span>
                     </p>
                 </div>
                 <p class="font-medium text-gray-800 dark:text-gray-300 sm:block hidden">BDPM API v0</p>
@@ -25,128 +28,197 @@
 
     <div class="container mx-auto max-w-4xl md:mt-32 mt-24 px-4">
 
+        <!-- Title -->
         <div class="flex items-center gap-2 w-full justify-center">
             <img src="./ressources/favicon.png" class="h-5 sm:h-6" alt="AppyCare Logo">
-            <p class="dark:text-white text-left font-semibold sm:text-lg text-base">AppyCare</p>
+            <p class=" text-left font-semibold sm:text-lg text-base">AppyCare</p>
         </div>
-        <p class="md:text-3xl text-2xl font-bold text-center mt-3 dark:text-white px-4">BDPM API Documentation</p>
+        <p class="md:text-3xl text-2xl font-bold text-center mt-3  px-4">BDPM API Documentation</p>
         <div class="w-full flex justify-center text-center mt-4">
-            <code class="code-block text-xs text-sk-400">Current API version: v0</code>
+            <code class="code-block text-xs text-sk-400">Current API version: beta-v0</code>
         </div>
 
+        <!-- Navigation Buttons -->
         <div class="flex flex-row gap-5 sm:text-lg text-base sm:mt-16 mt-10 items-start sm:justify-start justify-center">
             <a class="flex flex-col gap-1" href="#">
-                <p class="font-semibold dark:text-white">Information</p>
+                <p class="font-semibold ">Information</p>
                 <div id="line" class="h-0.5 bg-black dark:bg-teal-600 rounded-full"></div>
             </a>
             <a class="flex flex-col gap-1" href="#">
-                <p class="font-semibold dark:text-white">Usage</p>
+                <p class="font-semibold">Usage</p>
                 <div id="line2" class="h-0.5 bg-transparent"></div>
             </a>
         </div>
 
-        <div class="border-2 border-opacity-30 dark:border-teal-500 dark:border-opacity-50 border-teal-500 rounded-xl my-10">
-            <div class="border-b-2 dark:border-b-teal-500 border-b-teal-500 border-opacity-20 dark:border-opacity-30 dark:bg-teal-700 dark:bg-opacity-20 bg-teal-500 bg-opacity-10 rounded-t-xl px-4 py-2 flex flex-row items-center justify-start gap-3">
-                <svg viewBox="-.005 0 19.931 19.931" class="sm:block hidden w-5 h-5 dark:fill-white fill-black" xmlns="http://www.w3.org/2000/svg"><path opacity="0" d="M0 0h19.92v19.93H-.01Z"/><path d="M9.96 19.92c5.44 0 9.96-4.53 9.96-9.97 0-5.45-4.53-9.97-9.98-9.97C4.5-.02-.02 4.49-.02 9.94c0 5.43 4.52 9.96 9.96 9.96Zm0-1.67c-4.61 0-8.3-3.7-8.3-8.31s3.67-8.31 8.28-8.31c4.6 0 8.31 3.69 8.31 8.3 0 4.6-3.7 8.3-8.31 8.3Zm-1.71-2.84h3.97c.4 0 .71-.3.71-.7 0-.39-.32-.69-.72-.69h-1.22V9.04c0-.53-.27-.88-.77-.88H8.38c-.41 0-.72.3-.72.68 0 .4.31.69.71.69h1.04V14H8.19c-.41 0-.72.3-.72.68 0 .4.31.69.71.69Zm1.62-8.85c.71 0 1.26-.57 1.26-1.28 0-.72-.56-1.28-1.27-1.28s-1.27.56-1.27 1.27 .56 1.27 1.26 1.27Z"/></svg>
-                <p class="font-medium sm:text-lg text-base dark:text-white">General information</p>
+        <!-- Terms of use -->
+        <div class="border border-opacity-30 dark:border-teal-500 dark:border-opacity-50 border-teal-500 rounded-lg my-10">
+            <div class="border-b dark:border-b-teal-500 border-b-teal-500 border-opacity-20 dark:border-opacity-30 dark:bg-teal-700 dark:bg-opacity-20 bg-teal-500 bg-opacity-20 rounded-t-lg px-4 py-2 flex flex-row items-center justify-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="sm:block hidden w-5 h-5 dark:fill-white fill-black" viewBox="0 -.392 20.468 19.445"><path opacity="0" d="M0 0h20.46v18.66H-.01Z"></path><path d="M2.66 18.55h15.13c1.66 0 2.66-1.16 2.66-2.65 0-.46-.14-.94-.39-1.37L12.48 1.32C11.97.43 11.1-.02 10.2-.02c-.9 0-1.78.44-2.28 1.33L.34 14.51c-.27.43-.39.9-.39 1.36 0 1.49 1 2.64 2.66 2.64Zm0-1.54c-.69 0-1.1-.53-1.1-1.13 0-.19.03-.42.14-.625l7.56-13.2c.2-.37.57-.52.93-.52 .36 0 .72.15.92.51l7.56 13.2c.1.2.15.42.15.61 0 .59-.43 1.12-1.11 1.12Zm7.55-5.05c.46 0 .74-.28.75-.79l.13-5.15c0-.5-.39-.87-.9-.87 -.53 0-.9.36-.89.85l.12 5.15c0 .49.28.78.77.78Zm0 3.17c.56 0 1.05-.45 1.05-1.02 0-.58-.48-1.02-1.06-1.02 -.58 0-1.06.44-1.06 1.01 0 .55.48 1.01 1.05 1.01Z"></path></svg>
+                <p class="font-medium sm:text-lg text-base">Terms of use</p>
             </div>
-            <div class="px-4 sm:py-3 py-2 bg-transparent dark:bg-teal-100 dark:bg-opacity-5 rounded-b-xl">
-                <p class="dark:text-white sm:text-base text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <div class="px-4 sm:py-3 py-2 dark:bg-teal-500 dark:bg-opacity-5 bg-teal-500 bg-opacity-5 rounded-b-lg">
+                <p class="sm:text-base text-sm">
+                    This API is available free of charge. All accessible resources come from the French Public Drug Database (Base de Données Publique des Médicaments, BDPM), made available by the ANSM, the HAS and the UNCAM. AppyCare cannot be held responsible for the validity of the data accessible through this API and for any information that has not been updated at the time of use, either for viewing or for integration into another system. The use of this service engages your own responsibility, this API is just a way to access the publicly available data. Our only goal is to make this data more accessible.
+                    <span class="">
+                        <br><br>By using this API you agree to:
+                        <br>- be responsible for its use and the validity of the data transmitted
+                        <br>- not to alter the data or distort its meaning
+                        <br>- to mention the source of the data: "Base de Données Publique des Médicaments - http://base-donnees-publique.medicaments.gouv.fr", and the date of its last update
+                        <br>- to mention the service used: "AppyCare BDPM API"
+                        <br>- not to suggest any recognition or endorsement of the "re-user" by the ANSM, the HAS, the UNCAM or AppyCare
+                    </span>
                 </p>
             </div>
         </div>
 
+        <!-- Sections -->
+        <div class="flex flex-col gap-12 mt-6">
 
-        <div class="flex flex-col gap-10 mt-6">
-            <div class="flex flex-col gap-3 text-left">
-                <div class="flex flex-row items-center gap-3">
-                    <img src="./ressources/info-circle.svg" alt="" class="block w-5 h-5">
-                    <p class="font-medium text-xl">General information</p>
-                </div>
-                <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
-
-            <div class="flex flex-col gap-3 text-justify">
-                <div class="flex flex-row items-center gap-3">
-                    <img src="./ressources/lock-shield.svg" alt="" class="block w-5 h-5">
+            <!-- Privacy -->
+            <div class="flex flex-col">
+                <div class="flex flex-row items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 dark:fill-white fill-black" viewBox="0 -.023 16.23 20.288"><path opacity="0" d="M0 0h16.23v20.24H-.01Z"></path><path d="M8.11 20.24c.15 0 .41-.06.65-.2 5.55-3.12 7.46-4.44 7.46-8V4.56c0-1.03-.44-1.35-1.27-1.7 -1.16-.48-4.88-1.82-6.03-2.22 -.27-.09-.55-.15-.83-.15 -.28 0-.56.07-.82.14 -1.16.33-4.89 1.74-6.04 2.21 -.83.34-1.27.67-1.27 1.69V12c0 3.56 1.91 4.87 7.46 7.99 .25.13.49.19.65.19Zm0-1.77c-.16 0-.32-.06-.61-.24 -4.52-2.74-5.96-3.54-5.96-6.56V4.86c0-.34.05-.46.33-.57C3.35 3.7 6.23 2.73 7.7 2.15c.15-.07.28-.09.39-.09 .1 0 .23.02.39.08 1.47.58 4.33 1.62 5.84 2.13 .26.09.32.23.32.56v6.8c0 3.01-1.45 3.8-5.96 6.55 -.29.17-.45.23-.61.23Zm-3.53-4.72c0 .73.32 1.07.99 1.07h5.05c.67 0 .99-.35.99-1.08V9.85c0-.69-.29-1.03-.86-1.07V7.62c0-1.8-1.08-3-2.67-3 -1.6 0-2.67 1.2-2.67 2.99v1.15c-.58.03-.86.38-.86 1.06Zm1.87-4.97V7.53c0-1.16.66-1.91 1.65-1.91 .98 0 1.65.75 1.65 1.9v1.25Z"></path></svg>
                     <p class="font-semibold text-xl">Privacy</p>
                 </div>
-                <p class="">
+                <div  class="divider mt-2 mb-3"></div>
+               <p class="sm:text-lg text-base">
                     At AppyCare, we strongly believe that privacy is a core principle that should be considered a human right. With that in mind,
                     we take your privacy (and your users'), extremely seriously. We are committed to being transparent about what information we collect
                     and the resons why we might collect any specific data.
-                </p>
-                <p class="">
+                    <br><br>
                     Our BDPM API does not collect any usage data from you or your users. We do not track how you use this API or
                     what you do with the information you receive through it. We value your trust and are committed to offer you an
                     easy access to medication data without making any compromises about your privacy. 
-                </p>
-                <p class="">
+                    <br><br>
                     If you have any questions or concerns about your privacy, or any related questions, please do not hesitate
                     to contact us at privacy@appycare.fr.
-                </p>
+               </p>
             </div>
 
-            <div class="flex flex-col gap-3 text-justify">
-                <div class="flex flex-row items-center gap-3">
-                    <img src="./ressources/list-dash-header-rectangle.svg" alt="" class="block w-5 h-5">
+            <!-- Headers -->
+            <div class="flex flex-col">
+                <div class="flex flex-row items-center gap-2">
+                    <svg viewBox="0 0 23.027 18.021" class="w-5 h-5 dark:fill-white fill-black" xmlns="http://www.w3.org/2000/svg"><path opacity="0" d="M0 0h23.02v17.97H-.01Z" transform="translate(0 .022)"/><path d="M4.88 5.56h1.18c.41 0 .75-.35.75-.76 0-.42-.36-.76-.76-.76H4.86c-.42 0-.75.34-.75.75s.33.75.74.75Zm0 3.25h1.18c.4 0 .75-.34.75-.75 0-.42-.35-.75-.76-.75H4.86c-.42 0-.75.33-.75.74s.32.74.74.74Zm3.91-3.39h9.47c.34 0 .6-.28.6-.62 0-.35-.27-.61-.61-.61H8.77c-.35 0-.61.26-.61.6 0 .34.26.61.6.61Zm0 3.26h9.47c.34 0 .6-.27.6-.62s-.27-.62-.61-.62H8.77c-.34 0-.61.26-.61.61 0 .34.26.61.6.61Zm-5.74 9.28h16.89c2.05 0 3.06-1.01 3.06-3.02V3c0-2.02-1.02-3.03-3.07-3.03H3.03C.98-.04-.04.98-.04 2.99v11.93c0 2.01 1.02 3.01 3.06 3.01Zm.01-1.58c-.98 0-1.52-.52-1.52-1.54V3.08c0-1.02.53-1.55 1.51-1.55H19.9c.96 0 1.51.52 1.51 1.54v11.75c0 1.01-.55 1.53-1.52 1.53Z" transform="translate(0 .022)"/></svg>
                     <p class="font-semibold text-xl">Headers</p>
                 </div>
-                <p class="">
+                <div  class="divider mt-2 mb-3"></div>
+               <p class="sm:text-lg text-base">
                     A few HTTP headers are included in every response messages that are sent between you and our servers.
                     These headers provide additional information about the request or response, such as the content type,
                     the date and time, and general information about the API.
-                </p>
-                <p class="">
+                    <br><br>
                     These HTTP headers can be used to retrieve informations such as how to contact our support team or
-                    get the official data source link. 
-                </p>
+                    get the official data source link. Additional headers may be included in future releases.
+               </p>
+                <div class="border border-opacity-30 dark:border-gray-500 dark:border-opacity-50 border-gray-500 rounded-lg mt-4">
+                    <div class="border-b dark:border-b-gray-500 border-b-gray-500 border-opacity-20 dark:border-opacity-30 dark:bg-gray-700 dark:bg-opacity-20 bg-gray-500 bg-opacity-20 rounded-t-lg px-4 py-2">
+                        <p class="font-medium sm:text-lg text-base">Response Headers</p>
+                        <div class="mt-1 flex flex-row justify-between items-center text-sm text-black dark:text-white text-opacity-50 dark:text-opacity-50">
+                            <p>Name</p>
+                            <p>Value</p>
+                        </div>
+                    </div>
+                    <div class="px-4 sm:py-3 py-2 dark:bg-gray-500 dark:bg-opacity-5 bg-gray-500 bg-opacity-5 rounded-b-lg">
+                        <div class="flex flex-col justify-center items-stretch">
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">X-Powered-By</code>
+                                <code class="sm:text-sm text-xs text-right">AppyCare BDPM API</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-Copyright</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">AppyCare © All Rights Reserved.</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-Support</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">Coming Soon.</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-Source</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">https://base-donnees-publique.medicaments.gouv.fr</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-Public-Website</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">https://www.appycare.fr</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-API-Endpoints</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">https://www.api.appycare.fr</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-Developer-Website</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">https://www.developer.appycare.fr</code>
+                            </div>
+                            <div class="divider mt-2 mb-3"></div>
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">Content-Type</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">application/json; charset=utf-8</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-col gap-3 text-justify">
-                <div class="flex flex-row items-center gap-3">
-                    <img src="./ressources/key-radiowaves-forward-fill.svg" alt="" class="block w-5 h-5">
-                    <p class="font-semibold text-xl">Global API key</p>
-                </div>
-                <p class="">
-                    This is a consumption-only API, only the HTTP <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm text-green-500">GET</span> method is available no matter the ressource or endpoint used.
-                    No individual authentication is required to access this API, and resources are fully open and available using this global API key:
-                </p>
-                <div class="flex flex-col justify-center items-center">
-                    <code class="code-block text-center">
-                        8c7d3f5f-c9b1-419a-b93f-cafe2f7c41c4
-                    </code>
-                </div>
-                <p class="">
-                    To be granted access to the API ressources, the API key needs to be passed using a HTTP header. 
-                </p>
-                <p class="">
-                    Use the <code class="code-block text-yellow-500">AC-API-KEY</code> header name to pass the global key; note that any request made that do not include a valid
-                    key will return a 401 Unauthorized error. No usage rate applies, but we still encourage you to limit the 
-                    frequency of requests to limit our hosting costs and more importently limit data transfers
-                    to the stricly required ones.
-                </p>
-                <p class="">
-                    Example using ExpressJS :<br>
-                    <code class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md border border-white border-opacity-30 text-sm">req.set("AC-API-KEY", "lsdqkjfnlkjndlfqkjbkjb");</code>
-                </p>
-                <div class="flex flex-row items-center gap-4 bg-orange-500 bg-opacity-10 px-4 py-2 rounded-md border border-orange-300 border-opacity-40 text-sm text-left font-medium text-orange-400">
-                    <img src="./ressources/exclamationmark-triangle.svg" alt="" class="w-5 h-5 block">
-                    <p class="">
-                        Please be aware that the value of this global key might change in the future and would require you to
-                        update your requests to use the updated value.
+            <!-- API Key -->
+            <div class="flex flex-col">
+               <div class="flex flex-row justify-between items-center">
+                    <div class="flex flex-row items-center gap-2">
+                        <svg viewBox="0 0 22.112 25.127" class="w-5 h-5 dark:fill-white fill-black" xmlns="http://www.w3.org/2000/svg"><path opacity="0" d="M0 0h21.89v25.12H-.01Z" transform="translate(.109 0)"/><path d="M15.21 11.01c.33.22.79.14 1.05-.23 .74-1 1.19-2.46 1.19-3.95 0-1.5-.45-2.94-1.2-3.94 -.27-.39-.73-.45-1.06-.22 -.4.27-.46.75-.16 1.15 .57.78.88 1.86.88 2.99 0 1.13-.33 2.2-.89 2.99 -.3.41-.24.88.15 1.17Zm3.62 2.53c.36.24.81.16 1.06-.22 1.25-1.72 1.99-4.09 1.99-6.5 0-2.42-.74-4.8-2-6.5 -.26-.38-.71-.46-1.07-.22 -.37.24-.42.7-.14 1.1 1.06 1.51 1.67 3.52 1.67 5.6 0 2.08-.64 4.09-1.68 5.6 -.28.4-.23.85.13 1.1ZM5.84 24.37c.41.34.96.39 1.35 0l3.01-3.02c.38-.4.36-.98-.01-1.36l-1.52-1.51 2.2-2.2c.38-.38.36-.97-.01-1.36l-2.05-2.06C11.49 11.57 13 9.38 13 6.78 13 3.17 10.08.26 6.47.26 2.83.25-.07 3.15-.07 6.77c0 2.61 1.5 4.94 3.87 5.98v9.21c0 .32.09.69.38.94Zm.68-1.55l-1.09-1.08V11.66c-2.3-.52-3.89-2.51-3.89-4.86 -.001-2.74 2.21-4.95 4.97-4.95 2.74-.01 4.95 2.2 4.95 4.94 0 2.33-1.61 4.33-4.06 4.92v1.97l1.91 1.92 -2.08 2.04v1.62l1.38 1.36Zm0-16.3c.86-.01 1.58-.72 1.58-1.6 0-.87-.72-1.58-1.59-1.58 -.89 0-1.59.7-1.59 1.57 0 .87.7 1.59 1.58 1.59Z" transform="translate(.109 0)"/></svg>
+                        <p class="font-semibold text-xl">Global API key</p>
+                    </div>
+                    <p class="text-sm text-orange-400 font-medium">Important</p>
+               </div>
+                <div class="divider mt-2 mb-3"></div>
+               <div class="sm:text-lg text-base">
+                    <p>
+                        This is a consumption-only API, only the HTTP <span class="code-block text-green-500">GET</span> method is available no matter the ressource or endpoint used.
+                        No individual authentication is required to access this API, however resources are only available using this global API key:
                     </p>
+                    <div class="flex flex-col justify-center items-center my-3">
+                        <code class="code-block text-center">
+                            8c7d3f5f-c9b1-419a-b93f-cafe2f7c41c4
+                        </code>
+                    </div>
+                    <p>
+                        To be granted access to the API ressources, the API key needs to be passed using the <code class="code-block dark:text-blue-400 text-blue-500">AC-API-KEY</code> HTTP header.
+                        <br><br>
+                        Use the <code class="code-block dark:text-blue-400 text-blue-500">AC-API-KEY</code> header name to pass the global key; note that any request made that do not include a valid
+                        key will return a <span class="code-block text-red-400 font-medium">401 Unauthorized</span> error. No usage rate applies, but we still encourage you to limit the 
+                        frequency of requests to limit our hosting costs and more importently limit data transfers
+                        to the stricly required ones. Too many attempts without a valid key might get your IP address suspended from using our service.
+                    </p>                
+                    <div class="border border-opacity-30 dark:border-gray-500 dark:border-opacity-50 border-gray-500 rounded-lg mt-4">
+                        <div class="border-b dark:border-b-gray-500 border-b-gray-500 border-opacity-20 dark:border-opacity-30 dark:bg-gray-700 dark:bg-opacity-20 bg-gray-500 bg-opacity-20 rounded-t-lg px-4 py-2">
+                            <p class="font-medium sm:text-lg text-base">Required Headers</p>
+                            <div class="mt-1 flex flex-row justify-between items-center text-sm text-black dark:text-white text-opacity-50 dark:text-opacity-50">
+                                <p>Name</p>
+                                <p>Value</p>
+                            </div>
+                        </div>
+                        <div class="px-4 sm:py-3 py-2 dark:bg-gray-500 dark:bg-opacity-5 bg-gray-500 bg-opacity-5 rounded-b-lg">
+                            <div class="flex flex-row justify-between items-center">
+                                <code class="sm:text-sm text-xs text-left">AC-API-KEY</code>
+                                <code class="sm:text-sm text-xs text-right sm:break-normal break-all">8c7d3f5f-c9b1-419a-b93f-cafe2f7c41c4</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-4 bg-orange-500 bg-opacity-5 px-4 py-2 rounded-lg border border-orange-300 border-opacity-40 text-sm text-left font-medium text-orange-400 mt-4">
+                        <svg class="w-6 h-6 dark:fill-orange-400 fill-orange-400 sm:block hidden" viewBox="0 0 20.468 19.445" xmlns="http://www.w3.org/2000/svg"><path opacity="0" d="M0 0h20.46v18.66H-.01Z" transform="translate(0 .392)"/><path d="M2.66 18.55h15.13c1.66 0 2.66-1.16 2.66-2.65 0-.46-.14-.94-.39-1.37L12.48 1.32C11.97.43 11.1-.02 10.2-.02c-.9 0-1.78.44-2.28 1.33L.34 14.51c-.27.43-.39.9-.39 1.36 0 1.49 1 2.64 2.66 2.64Zm0-1.54c-.69 0-1.1-.53-1.1-1.13 0-.19.03-.42.14-.625l7.56-13.2c.2-.37.57-.52.93-.52 .36 0 .72.15.92.51l7.56 13.2c.1.2.15.42.15.61 0 .59-.43 1.12-1.11 1.12Zm7.55-5.05c.46 0 .74-.28.75-.79l.13-5.15c0-.5-.39-.87-.9-.87 -.53 0-.9.36-.89.85l.12 5.15c0 .49.28.78.77.78Zm0 3.17c.56 0 1.05-.45 1.05-1.02 0-.58-.48-1.02-1.06-1.02 -.58 0-1.06.44-1.06 1.01 0 .55.48 1.01 1.05 1.01Z" transform="translate(0 .392)"/></svg>
+                        <p class="">
+                            Please be aware that the value of this global key might change in the future and would require you to
+                            update your requests to use the updated value.
+                        </p>
+                    </div>
+                   
                 </div>
             </div>
+
+            
         </div>
     </div>
 </body>
